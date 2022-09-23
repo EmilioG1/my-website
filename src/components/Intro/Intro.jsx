@@ -1,6 +1,7 @@
 import React from 'react'
 import './Intro.css'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import kodi from '../../img/kodi-outline.png';
 
 
 function Intro() {
@@ -31,6 +32,7 @@ function Intro() {
       </div>
       <div className='i-right'>
         <div className="i-bg"></div>
+        <img src={kodi} alt="kodi" className="i-img" />
       </div>
     </div>
   )
