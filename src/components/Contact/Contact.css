@@ -74,6 +74,7 @@ button:hover {
   background-color: rgb(103, 214, 255);
   color: white;
   border: solid 1px lightblue;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {

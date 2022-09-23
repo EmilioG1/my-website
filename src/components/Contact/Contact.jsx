@@ -8,7 +8,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Contact() {
   const formRef = useRef();
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
+  const [clearName, setClearName] = useState('');
+  const [clearSubject, setClearSubject] = useState('');
+  const [clearEmail, setClearEmail] = useState('');
+  const [clearMessage, setClearMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,11 +21,14 @@ function Contact() {
       .then((result) => {
         console.log(result.text);
         setDone(true);
+        setClearName('');
+        setClearSubject('');
+        setClearEmail('');
+        setClearMessage('');
       }, (error) => {
         console.log(error.text);
         alert("Message Failed to Send");
       });
-
   }
 
   return (
@@ -53,11 +60,11 @@ function Contact() {
           <p className="c-desc">
             <strong>It's nice to meet you!</strong> Please feel free to reach out and get in touch.
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder='Name' name='user_name' />
-            <input type="text" placeholder='Subject' name='user_subject' />
-            <input type="text" placeholder='Email' name='user_email' />
-            <textarea name="message" placeholder='Message' rows="10"></textarea>
+          <form ref={formRef} onSubmit={handleSubmit} >
+            <input type="text" placeholder='Name' name='user_name' onChange={e => setClearName(e.target.value)} value={clearName}/>
+            <input type="text" placeholder='Subject' name='user_subject' onChange={e => setClearSubject(e.target.value)} value={clearSubject}/>
+            <input type="text" placeholder='Email' name='user_email' onChange={e => setClearEmail(e.target.value)} value={clearEmail}/>
+            <textarea name="message" placeholder='Message' rows="10" onChange={e => setClearMessage(e.target.value)} value={clearMessage}></textarea>
             <button className='i-submit'>SUBMIT</button>
             {done && "Thank you! Message Sent"}
           </form>
