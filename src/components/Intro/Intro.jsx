@@ -20,12 +20,12 @@ function Intro() {
                 Software Developer
               </div>
               <div className="i-title-item">
-                UI/UX Designer
+                Design Engineer
               </div>
             </div>
           </div>
           <p className="i-desc">
-            I am a budding web and software developer focused on user-centered design.
+            I am a web and software developer focused on user-centered design.
           </p>
         </div>
       <KeyboardArrowDownIcon className='i-scroll' fontSize='large' color='primary' />

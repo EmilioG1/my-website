@@ -8,6 +8,7 @@ import github from '../../img/github.png';
 import firebase from '../../img/firebase.png';
 import rails from '../../img/rails.png';
 import ruby from '../../img/ruby.png';
+import photoshop from '../../img/photoshop.png';
 import './Skills.css';
 
 function Skills() {
@@ -22,6 +23,7 @@ function Skills() {
       <img src={rails} alt="skill" className='s-img' />
       <img src={github} alt="skill" className='s-img' />
       <img src={firebase} alt="skill" className='s-img' />
+      <img src={photoshop} alt="skill" className='s-img' />
     </div>
   )
 }

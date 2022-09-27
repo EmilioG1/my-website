@@ -1,5 +1,6 @@
-import wolf from "./img/wolf.png"
 import alltails from './img/alltails.png'
+import opine from './img/opine.png'
+import meExtra from './img/meExtra.png'
 
 export const projects = [
   {
@@ -10,15 +11,15 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Mario's Fine Foods",
-    img: (wolf),
-    link: "https://github.com/EmilioG1/marios-fine-foods",
+    name: "Opine",
+    img: (opine),
+    link: "https://opineschool.com/",
   },
   {
     id: 3,
-    name: "Office RPG",
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-    link: "https://github.com/EmilioG1/office-rpg",
+    name: "Mario's Fine Foods",
+    img: (meExtra),
+    link: "https://github.com/EmilioG1/marios-fine-foods",
   }
 ]
 
