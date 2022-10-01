@@ -5,6 +5,7 @@ import PlaceIcon from '@mui/icons-material/Place';
 import emailjs from '@emailjs/browser';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Footer from '../Footer/Footer.jsx';
 
 function Contact() {
   const formRef = useRef();
@@ -70,6 +71,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
