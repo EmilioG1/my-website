@@ -1,12 +1,23 @@
-.nav {
+.navBar {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  align-items: stretch;
+  align-items: center;
   gap: 2rem;
   padding: 0 1rem;
   box-shadow: 0px 5px 10px rgb(211, 211, 211);
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+}
+
+.navBar button {
+  position: fixed;
+  left: 400px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .n-img {
@@ -14,7 +25,6 @@
   height: 10vh;
   width: auto;
   align-items: center;
-  padding-top: .5rem;
 }
 
 .n-ul {
@@ -40,4 +50,22 @@
 
 .n-link:hover {
   color: #38afd1;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    display: flex;
+    width: 100%;
+      justify-content: space-between;
+        box-sizing: border-box;
+        align-items: stretch;
+    margin-right: auto;
+  }
+
+  .n-ul {
+    margin-right: auto;
+    display: flex;
+  }
+
+  
 }

@@ -1,37 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Navbar.css';
 import letterE from '../../img/letterE.png';
-import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 
 const Navbar = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const handleToggle = () => {
+    setNavbarOpen(prev => !prev)
+  }
+
+  const closeMenu = () => {
+    setNavbarOpen(false)
+  }
+
   return (
-    <nav className='nav'>
+    <nav className='navBar'>
       <img className='n-img' src={letterE} alt="the letter e" />
-      <ul className='n-ul'>
-        <CustomLink className="n-link" to='/'>Home</CustomLink>
-    
-        <CustomLink className="n-link" to='/about'>About</CustomLink>
-    
-        <CustomLink className="n-link" to='/projects'>Projects</CustomLink>
-
-        <CustomLink className="n-link" to='/contact'>Contact</CustomLink>
-
-        <CustomLink className="n-link" to='/resume'>Resume</CustomLink>
+      {/* <button onClick={handleToggle}>{navbarOpen ? "Close" : "Open"}</button> */}
+      <ul className={`n-ul ${navbarOpen ? " showMenu" : ""}`}>
+        <a className='n-link' href='#intro'>Home</a>
+        <a className='n-link' href='#about'>About</a>
+        <a className='n-link' href='#projects'>Projects</a>
+        <a className='n-link' href='#resume'>Resume</a>
+        <a className='n-link' href='#contact'>Contact</a>
       </ul>
     </nav>
-  )
-}
-
-const CustomLink = ({ to, children, ...props }) => {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
   )
 }
 

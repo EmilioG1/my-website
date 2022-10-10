@@ -3,9 +3,9 @@ import './Resume.css';
 
 const Resume = () => {
   return (
-    <div>
+    <div id='resume'>
       <h1 id="name">Emilio Gonzales</h1>
-        <p id="contact"><strong>Email:</strong> <a href="mailto:emiliog1184@gmail.com">emiliog1184@gmail.com</a> | <strong>Phone:</strong> 916-601-4437</p>
+        <p id="info"><strong>Email:</strong> <a href="mailto:emiliog1184@gmail.com">emiliog1184@gmail.com</a> | <strong>Phone:</strong> 916-601-4437</p>
         <div id="r-container">
         <div id="r-left">
           <div id="bio">

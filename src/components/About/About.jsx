@@ -5,7 +5,7 @@ import Skills from '../Skills/Skills';
 
 function About() {
   return (
-    <div className='a'>
+    <div className='a' id='about'>
       <div className="a-left">
         <div className="a-card bg"></div>
         <div className="a-card">

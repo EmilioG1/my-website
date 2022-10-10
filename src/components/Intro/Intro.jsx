@@ -6,7 +6,7 @@ import kodi from '../../img/kodi-outline.png';
 
 function Intro() {
   return (
-    <div className='i'>
+    <div className='i' id='intro'>
       <div className='i-left'>
         <div className="i-left-wrapper">
           <h2 className='i-intro'>hello, my name is</h2>
