@@ -66,7 +66,7 @@ function Contact() {
             <input type="text" placeholder='Subject' name='user_subject' onChange={e => setClearSubject(e.target.value)} value={clearSubject}/>
             <input type="text" placeholder='Email' name='user_email' onChange={e => setClearEmail(e.target.value)} value={clearEmail}/>
             <textarea name="message" placeholder='Message' rows="10" onChange={e => setClearMessage(e.target.value)} value={clearMessage}></textarea>
-            <button className='i-submit'>SUBMIT</button>
+            <button className='c-submit'>SUBMIT</button>
             {done && "Thank you! Message Sent"}
           </form>
         </div>

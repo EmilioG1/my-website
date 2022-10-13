@@ -12,13 +12,15 @@
   background-color: white;
 }
 
-.navBar button {
+/* .navBar button {
   position: fixed;
-  left: 400px;
-  top: 40px;
+  left: 100px;
+  top: 20px;
   z-index: 10;
   cursor: pointer;
-}
+
+  border: none;
+} */
 
 .n-img {
   display: flex;
@@ -56,16 +58,25 @@
   .nav {
     display: flex;
     width: 100%;
-      justify-content: space-between;
-        box-sizing: border-box;
-        align-items: stretch;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
     margin-right: auto;
   }
-
+  
   .n-ul {
     margin-right: auto;
     display: flex;
+    flex-wrap: wrap;
+    gap: 0;
   }
 
-  
+  .n-img {
+    height: 6vh;
+    width: auto;
+  }
+
+  .n-link {
+    padding: 0.4rem;
+  }
 }

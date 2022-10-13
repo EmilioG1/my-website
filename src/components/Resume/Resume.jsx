@@ -20,6 +20,9 @@ const Resume = () => {
               Working in React.js, Firebase/Firestore, and Material UI.
             </li>
             <li>
+              Wrote code that was pushed code to production. 
+            </li>
+            <li>
               Helped to create Exhibits component used for adding images and documents.
             </li>
             <li>

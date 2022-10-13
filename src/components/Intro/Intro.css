@@ -85,15 +85,6 @@
   right: 0;
 }
 
-.i-submit {
-  background-color: white;
-  border-radius: 5px;
-  padding: 8px 15px;
-  color: #38afd1;
-  border-color: #38afd1;
-  margin-right: 5px;
-}
-
 @media screen and (max-width: 480px) {
   .i {
     flex-direction: column;
